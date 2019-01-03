@@ -48,26 +48,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background: #22c1c3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #22c1c3, #fdbb2d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #22c1c3, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
 }
 .calculator {
     min-width: 320px;
     min-height: 490px;
     width: 50%;
     height: 80%;
+    max-height: 80vw;
     max-width: 50vh;
+    border: 2px rgba(255, 255, 255, 0.5) solid;
     background-color: rgba(169, 169, 169, 0.2);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: calc(0.5em + 1%);
+    border-radius: 5px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
 }
 .screen {
 	display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 98%;
-    background-color: #ffffff;
+    background-color: rgba(193, 193, 193, 0.35);
+    color: rgba(255, 255, 255, 0.5);
     text-align: right;
     border-radius: 5px;
     padding-right: 15px;
@@ -91,9 +102,11 @@ body {
     width: 20%;
     height: auto;
     text-align: center;
-    border: 2px black solid;
-    border-radius: 50%;
+    border: 2px rgba(255, 255, 255, 0.5) solid;
+    border-radius: 50em;
     padding: calc(10% - 0.5em) 0;
     font-size: calc(1em + 1vw);
     margin: 1.8%;
+    max-height: 1em;
+    color: rgba(255, 255, 255, 0.5);
 }
