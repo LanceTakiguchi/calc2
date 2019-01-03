@@ -110,3 +110,6 @@ body {
     max-height: 1em;
     color: rgba(255, 255, 255, 0.5);
 }
+.buttons > .zero {
+    width: 40%;
+}
